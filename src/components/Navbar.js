@@ -160,11 +160,12 @@ function Navbar() {
         <Link href      = "/" className = "text-white font-bold text-2xl" onClick = {() => setIsActive("")}>
                     MAHAD
                 </Link>
-                <div className="hidden md:flex space-x-9">
-                    <Link onClick={() => handleLinkClick("Home")} href="Home" className={isActive === "Home" ? "text-white font-bold border-b-2" : "text-gray-300 hover:text-white"}>Home</Link>
-                    <Link onClick={() => handleLinkClick("About")} href="About" className={isActive === "About" ? "text-white font-bold border-b-2" : "text-gray-300 hover:text-white"}>About</Link>
-                    <Link onClick={() => handleLinkClick("Services")} href="Services" className={isActive === "Services" ? "text-white font-bold border-b-2" : "text-gray-300 hover:text-white"}>Services</Link>
-                    <Link onClick={() => handleLinkClick("Contact")} href="Contact" className={isActive === "Contact" ? "text-white font-bold border-b-2" : "text-gray-300 hover:text-white"}>Contact</Link>
+                <div  className = "hidden md:flex space-x-9">
+                <Link onClick   = {() => handleLinkClick("Home")} href      = "/Home" className              = {isActive === "Home" ? "text-white font-bold border-b-2 " : "text-gray-300 hover:text-white"}>Home</Link>
+                <Link onClick   = {() => handleLinkClick("About")} href     = "/About" className             = {isActive === "About" ? "text-white font-bold border-b-2" : "text-gray-300 hover:text-white"}>About</Link>
+                <Link onClick   = {() => handleLinkClick("Services")} href  = "/Services" className          = {isActive === "Services" ? "text-white font-bold border-b-2" : "text-gray-300 hover:text-white"}>Services</Link>
+                <Link onClick   = {() => handleLinkClick("Contact")} href   = "/Contact" className           = {isActive === "Contact" ? "text-white font-bold border-b-2" : "text-gray-300 hover:text-white"}>Contact</Link>
+                <Link onClick   = {() => handleLinkClick("Dashboard")} href = "/Dashboard/profile" className = {isActive === "Dashboard" ? "text-white font-bold border-b-2" : "text-gray-300 text-lg hover:text-white"}>DashBoard</Link>
                 </div>
                 <div className="md:hidden">
                     <button onClick={toggleMenu} className="text-white focus:outline-none">
@@ -179,6 +180,7 @@ function Navbar() {
                 <Link onClick   = {() => handleLinkClick("Home")} href     = "Home" className     = "text-gray-300 hover:text-white">Home</Link>
                 <Link onClick   = {() => handleLinkClick("About")} href    = "About" className    = "text-gray-300 hover:text-white">About</Link>
                 <Link onClick   = {() => handleLinkClick("Services")} href = "Services" className = "text-gray-300 hover:text-white">Services</Link>
+                <Link onClick   = {() => handleLinkClick("Contact")} href  = "Contact" className  = "text-gray-300 hover:text-white">Contact</Link>
                 <Link onClick   = {() => handleLinkClick("Contact")} href  = "Contact" className  = "text-gray-300 hover:text-white">Contact</Link>
                     </div>
                 </div>
