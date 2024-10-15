@@ -160,12 +160,13 @@ function Navbar() {
         <Link href      = "/" className = "text-white font-bold text-2xl" onClick = {() => setIsActive("")}>
                     MAHAD
                 </Link>
-                <div  className = "hidden md:flex space-x-9">
-                <Link onClick   = {() => handleLinkClick("Home")} href      = "/Home" className              = {isActive === "Home" ? "text-white font-bold border-b-2 " : "text-gray-300 hover:text-white"}>Home</Link>
-                <Link onClick   = {() => handleLinkClick("About")} href     = "/About" className             = {isActive === "About" ? "text-white font-bold border-b-2" : "text-gray-300 hover:text-white"}>About</Link>
-                <Link onClick   = {() => handleLinkClick("Contact")} href   = "/Contact" className           = {isActive === "Contact" ? "text-white font-bold border-b-2" : "text-gray-300 hover:text-white"}>Contact</Link>
-                <Link onClick   = {() => handleLinkClick("Blogs")} href     = "/Blogs" className             = {isActive === "Blogs" ? "text-white font-bold border-b-2" : "text-gray-300 hover:text-white"}>Blogs</Link>
-                <Link onClick   = {() => handleLinkClick("Dashboard")} href = "/Dashboard/profile" className = {isActive === "Dashboard" ? "text-white font-bold border-b-2" : "text-gray-300 text-lg hover:text-white"}>DashBoard</Link>
+              <div    className = "hidden md:flex space-x-9">
+              <Link   onClick   = {() => handleLinkClick("Home")} href                                                                          = "/Home" className                      = {isActive === "Home" ? "text-white font-bold border-b-2 " : "text-gray-300 hover:text-white"}>Home</Link>
+              <Link   onClick   = {() => handleLinkClick("About")} href                                                                         = "/About" className                     = {isActive === "About" ? "text-white font-bold border-b-2" : "text-gray-300 hover:text-white"}>About</Link>
+              <Link   onClick   = {() => handleLinkClick("Contact")} href                                                                       = "/Contact" className                   = {isActive === "Contact" ? "text-white font-bold border-b-2" : "text-gray-300 hover:text-white"}>Contact</Link>
+              <Link   onClick   = {() => handleLinkClick("Blogs")} href                                                                         = "/Blogs" className                     = {isActive === "Blogs" ? "text-white font-bold border-b-2" : "text-gray-300 hover:text-white"}>Blogs</Link>
+              <Link   onClick   = {() => handleLinkClick("Dashboard")} href                                                                     = "/Dashboard/profile" className         = {isActive === "Dashboard" ? "text-white font-bold border-b-2" : "text-gray-300 text-lg hover:text-white"}>DashBoard</Link>
+              <button className = 'border border-white rounded px-4 py-1 mt-[-6px] text-white hover:bg-gray-700 hover:text-white'><Link onClick = {() => handleLinkClick("SignUp")} href = "/SignUp" className = {isActive === "SignUp" ? "text-white font-bold border-b-2" : "text-gray-300 text-lg hover:text-white"}>SignUp</Link></button>
                 </div>
                 <div className="md:hidden">
                     <button onClick={toggleMenu} className="text-white focus:outline-none">
@@ -182,6 +183,7 @@ function Navbar() {
                 <Link onClick   = {() => handleLinkClick("Contact")} href   = "Contact" className   = "text-gray-300 hover:text-white">Contact</Link>
                 <Link onClick   = {() => handleLinkClick("Blogs")} href     = "Blogs" className     = "text-gray-300 hover:text-white">Blogs</Link>
                 <Link onClick   = {() => handleLinkClick("Dashboard")} href = "Dashboard" className = "text-gray-300 hover:text-white">Dashboard</Link>
+                <Link onClick   = {() => handleLinkClick("SignUp")} href = "Dashboard" className = "text-gray-300 hover:text-white">SignUp</Link>
                     </div>
                 </div>
             )}

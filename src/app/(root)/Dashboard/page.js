@@ -1,8 +1,9 @@
+import React from 'react'
 
 function page() {
   return (
     <div>
-      i am dashboard ok
+      i am page of dash boeard
     </div>
   )
 }

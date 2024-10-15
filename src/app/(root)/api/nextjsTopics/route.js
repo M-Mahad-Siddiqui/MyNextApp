@@ -112,11 +112,11 @@ const nextjsTopics = [
     image: 'https://via.placeholder.com/150'
   },
   {
-    id         : 17,
-    slug       : 'optimizing-nextjs-performance',
-    title      : 'Optimizing Performance in Next.js',
+    id: 17,
+    slug: 'optimizing-nextjs-performance',
+    title: 'Optimizing Performance in Next.js',
     description: 'Explore strategies for optimizing your Next.js app\'s performance, including code splitting and lazy loading.',
-    image      : 'https://via.placeholder.com/150'
+    image: 'https://via.placeholder.com/150'
   },
   {
     id: 18,
@@ -176,4 +176,23 @@ const nextjsTopics = [
   }
 ];
 
-export default nextjsTopics;
+// export default function handler(req, res) {
+//   res.status(200).json(nextjsTopics);
+// }
+export async function GET(request) {
+  return Response.json({
+    data: nextjsTopics,
+    msg: "nextjs topics fetched successfully"
+  });
+}
+export async function POST(request) {
+  const obj = await request.json();
+  obj.id = courses.length + 1;
+  courses.unshift(obj);
+  return Response.json({
+    courses: courses,
+    msg: "Course Added Successfully"
+  });
+}
+
+// http://localhost:3000/api/nextjsTopics
