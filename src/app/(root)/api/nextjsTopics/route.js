@@ -185,6 +185,10 @@ export async function GET(request) {
     msg: "nextjs topics fetched successfully"
   });
 }
+  // http://localhost:3000/api/nextjsTopics
+
+
+
 export async function POST(request) {
   const obj = await request.json();
   obj.id = courses.length + 1;
@@ -195,4 +199,3 @@ export async function POST(request) {
   });
 }
 
-// http://localhost:3000/api/nextjsTopics

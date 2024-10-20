@@ -9,7 +9,7 @@ export default async function Page() {
     <div>
       <h1 className="relative text-3xl font-bold mx-auto text-center my-5 bg-gray-300 p-3 mx-5 rounded sticky top-0 z-10">
         Welcome to Blogs Page
-        <Link href = '/'  className = 'absolute top-3 left-5 p-2 text-sm border border-gray-500 rounded bg-gray-700 text-white ' >
+        <Link href='/' className='absolute top-3 left-5 p-2 text-sm border border-gray-500 rounded bg-gray-700 text-white ' >
           back
         </Link>
       </h1>

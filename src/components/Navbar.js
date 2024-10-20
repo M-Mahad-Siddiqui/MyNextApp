@@ -142,8 +142,8 @@ import Link from 'next/link';
 import { useState } from 'react';
 
 function Navbar() {
-    const [isOpen, setIsOpen] = useState(false);
-    const [isActive, setIsActive] = useState("");
+    const [isOpen, setIsOpen]     = useState(false);
+    const [isActive, setIsActive] = useState("Home");
 
     const toggleMenu = () => {
         setIsOpen(!isOpen);
@@ -161,7 +161,7 @@ function Navbar() {
                     MAHAD
                 </Link>
               <div    className = "hidden md:flex space-x-9">
-              <Link   onClick   = {() => handleLinkClick("Home")} href                                                                          = "/Home" className                      = {isActive === "Home" ? "text-white font-bold border-b-2 " : "text-gray-300 hover:text-white"}>Home</Link>
+              <Link   onClick   = {() => handleLinkClick("Home")} href                                                                          = "/" className                          = {isActive === "Home" ? "text-white font-bold border-b-2 " : "text-gray-300 hover:text-white"}>Home</Link>
               <Link   onClick   = {() => handleLinkClick("About")} href                                                                         = "/About" className                     = {isActive === "About" ? "text-white font-bold border-b-2" : "text-gray-300 hover:text-white"}>About</Link>
               <Link   onClick   = {() => handleLinkClick("Contact")} href                                                                       = "/Contact" className                   = {isActive === "Contact" ? "text-white font-bold border-b-2" : "text-gray-300 hover:text-white"}>Contact</Link>
               <Link   onClick   = {() => handleLinkClick("Blogs")} href                                                                         = "/Blogs" className                     = {isActive === "Blogs" ? "text-white font-bold border-b-2" : "text-gray-300 hover:text-white"}>Blogs</Link>
